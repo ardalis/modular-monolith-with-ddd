@@ -2083,6 +2083,12 @@ List of technologies, frameworks and libraries used for implementation:
 ```shell
 .\build MigrateDatabase "connection_string"
 ```
+In case you get the error: *Target with name 'connection_string' does not exist.* use the following command to run the migrations:
+
+```shell
+.\build MigrateDatabase --DatabaseConnectionString "connection_string"
+```
+
 
 *"connection_string"* - connection string to your database
 
